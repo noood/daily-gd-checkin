@@ -31,7 +31,7 @@ jobs:
     - name: 运行签到
       env:
         # 这里填入你之前在 Secrets 里设置的变量名，通常叫 COOKIE 或 GLADOS_COOKIE
-        COOKIE: ${{ secrets.COOKIE }} 
+        GLADOS_COOKIE: ${{ secrets.COOKIE }}
       run: |
         # 请确认你的主脚本名字是不是 glados.py，如果不是请改掉下面这行
         python glados.py
